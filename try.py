@@ -36,7 +36,7 @@ def make_card(buf):
 
 out.write(latex_pre)
 for i in range(1, 24):
-    f = urllib.urlopen('../genki/genki_vocab_table.php?lesson=%d' % (i))
+    f = urllib.urlopen('genki/genki_vocab_table.php?lesson=%d' % (i))
     p = TableParser()
     p.feed(f.read())
     f.close()
